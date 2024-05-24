@@ -1,0 +1,166 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'android';
+    src: url(arquivos/fontes/idroid.otf) format('OpenType');
+}
+@font-face {
+    font-family: 'bebas neue';
+    src: url(arquivos/fontes/BebasNeue-Regular.otf) format('OpenType');
+}
+
+body{
+    background-color: rgb(232, 231, 194);
+    margin: 0px;
+}
+
+header{
+    background-image: linear-gradient(180deg, rgb(47, 167, 102), rgb(6, 61, 30));
+    color: rgba(255, 255, 255, 0.911);
+    margin-top: 0px;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+}
+
+h1#titulo_cabecalho{
+    text-align: center;
+    font-family: 'bebas neue';
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.342);
+}
+
+h2#titulo_principal{
+    font-family: 'android';
+    margin-top: 0px;
+    color: rgb(26, 65, 49);
+    font-size: 28px;
+}
+
+h3#titulo_conteudo{
+    font-family: 'android';
+    color: rgb(31, 113, 60);
+    background-image: linear-gradient(90deg, rgb(134, 227, 174) 50%, white);
+    padding: 1px 5px;
+    font-size: 20px;
+}
+
+h3#complemento{
+    background-color: rgb(26, 92, 55);
+    padding: 10px 7px;
+    color: white;
+    border-radius: 14px 14px 0px 0px;;
+    margin: -10px -10px 0px -10px;
+    text-indent: 7px;
+}
+
+p#subtitulo_cabecalho{
+    text-align: center;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.384);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.753);
+    margin: 23px;
+    font-size: 19px;
+}
+
+nav{
+    padding: 9px 5px;
+}
+
+a#menu{
+    color: rgb(112, 223, 162);
+    color: var(rgb(112, 223, 162));
+    transition-duration: .5s;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 5px;
+    margin: 0px 10px;
+    padding: 10px 6px;
+    background-color: var(rgba(112, 223, 162, 0))
+}
+
+a#menu:hover{
+    text-decoration: underline;
+    color: rgb(6, 61, 30);
+    background-color: rgb(112, 223, 162);
+}
+
+a#links_externos{
+    color: rgb(7, 82, 38);
+    background-color: rgb(126, 227, 172);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px;
+}
+
+a#links_externos:hover{
+    text-decoration: underline;
+}
+
+a#links_externos::after{
+    content: '\1F517';
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    max-width: 1000px;
+    padding: 20px 20px;
+    border-radius: 4px 4px 15px 15px;
+    box-shadow: 0px 2px 5px 3px #00000042;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 18px;
+    line-height: 2em;
+}
+
+main > p > strong{
+    color: rgb(19, 58, 38)
+}
+
+picture > img{
+    width: 100%;
+}
+
+img#bugdroid{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+section#videoplayer{
+    background-color: rgb(6, 61, 30);
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+}
+
+section > iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+section#complemento{
+    background-color: rgb(131, 225, 173);
+    border-radius: 14px;
+    text-indent: 18px;
+    padding: 0px 10px 18px 10px;
+}
+
+ul{
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+}
+
+footer{
+    background-color: rgb(6, 61, 30);
+    margin: 12px 0px 0px 0px;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    color: white
+}
