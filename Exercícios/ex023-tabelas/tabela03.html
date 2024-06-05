@@ -13,6 +13,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: orange;
         }
 
         td, th{
@@ -24,10 +32,27 @@
             background-color: dimgrey;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: dimgrey;
+            border: 1px solid black;
+        }
+
+        tbody tr:nth-child(odd) {                   /*odd = par*/
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) {                  /*even = ímpar*/
+            background-color: lightgray;
+        }
+
         .numero{
             text-align: right;
         }
 
+
+        
     </style>
 
 </head>
@@ -38,23 +63,25 @@
         Anatomia para tabelas grandes:  (com tags semânticas)
 
         TABLE
-            THEAD
+            CAPTION               - Legenda/ título da tabela
+            THEAD                 - Cabeçalho da tabela
                 tr, td e th
 
-            TBODY
+            TBODY                 - Corpo da tabela
                 tr, td e th
 
-            TFOOT
+            TFOOT                 - Rodapé da tabela
                 tr, td e th
     
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -190,11 +217,13 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="numero"><strong>203 062 512</strong></td>
             </tr>
         </tfoot>
-
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio officiis voluptatum praesentium ratione corrupti id iure culpa impedit, earum molestiae architecto est tenetur iste nesciunt eveniet perspiciatis nostrum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam ullam, dolores eius cumque, beatae sunt ipsum nobis possimus quo, explicabo ducimus voluptatum pariatur. Beatae cumque ipsum quo facere maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus recusandae reiciendis numquam! Ab fugiat nemo dolor labore! Laudantium eaque cum voluptates dolorum facilis. Accusamus earum blanditiis similique culpa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio officiis voluptatum praesentium ratione corrupti id iure culpa impedit, earum molestiae architecto est tenetur iste nesciunt eveniet perspiciatis nostrum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam ullam, dolores eius cumque, beatae sunt ipsum nobis possimus quo, explicabo ducimus voluptatum pariatur. Beatae cumque ipsum quo facere maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus recusandae reiciendis numquam! Ab fugiat nemo dolor labore! Laudantium eaque cum voluptates dolorum facilis. Accusamus earum blanditiis similique culpa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio officiis voluptatum praesentium ratione corrupti id iure culpa impedit, earum molestiae architecto est tenetur iste nesciunt eveniet perspiciatis nostrum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam ullam, dolores eius cumque, beatae sunt ipsum nobis possimus quo, explicabo ducimus voluptatum pariatur. Beatae cumque ipsum quo facere maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus recusandae reiciendis numquam! Ab fugiat nemo dolor labore! Laudantium eaque cum voluptates dolorum facilis. Accusamus earum blanditiis similique culpa laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio officiis voluptatum praesentium ratione corrupti id iure culpa impedit, earum molestiae architecto est tenetur iste nesciunt eveniet perspiciatis nostrum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam ullam, dolores eius cumque, beatae sunt ipsum nobis possimus quo, explicabo ducimus voluptatum pariatur. Beatae cumque ipsum quo facere maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus recusandae reiciendis numquam! Ab fugiat nemo dolor labore! Laudantium eaque cum voluptates dolorum facilis. Accusamus earum blanditiis similique culpa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio officiis voluptatum praesentium ratione corrupti id iure culpa impedit, earum molestiae architecto est tenetur iste nesciunt eveniet perspiciatis nostrum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam ullam, dolores eius cumque, beatae sunt ipsum nobis possimus quo, explicabo ducimus voluptatum pariatur. Beatae cumque ipsum quo facere maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus recusandae reiciendis numquam! Ab fugiat nemo dolor labore! Laudantium eaque cum voluptates dolorum facilis. Accusamus earum blanditiis similique culpa laboriosam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio officiis voluptatum praesentium ratione corrupti id iure culpa impedit, earum molestiae architecto est tenetur iste nesciunt eveniet perspiciatis nostrum ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur magnam ullam, dolores eius cumque, beatae sunt ipsum nobis possimus quo, explicabo ducimus voluptatum pariatur. Beatae cumque ipsum quo facere maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore delectus recusandae reiciendis numquam! Ab fugiat nemo dolor labore! Laudantium eaque cum voluptates dolorum facilis. Accusamus earum blanditiis similique culpa laboriosam.</p>
 </body>
 </html>
