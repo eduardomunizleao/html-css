@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando o colspan e o rowspan</title>
+    
+    <style>
+        table{
+            width: 600px;
+            height: 400px;
+
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .destaque{
+            background-color: gray;
+            color:white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabela:</h1>
+
+    <table>
+        <thead class="destaque">
+            <tr>
+                <th score="col" rowspan="2">Área</td>
+                <th scope="col" rowspan="2">Disciplinas</td>
+                <th scope="colgroup" colspan="2">Notas</td>
+                <th scope="col" rowspan="2">Média</td>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+
+            <tr class='destaque'>
+                <th scope="row" colspan="4">Media de exatas</td>
+                <td><strong>0.0</strong></td>
+            </tr>
+
+
+            <tr>
+                <th  scope="rowgroup" rowspan="2">Humanas</td>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+
+            <tr class="destaque">
+                <th scope="row" colspan="4">Média de humanas</th>
+                <td><strong>0.0</strong></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
