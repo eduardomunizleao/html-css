@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha primeira página usando iframe</title>
 
-
+    <style>
+        iframe{
+            border: 5px dashed black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testando o uso de um iframe</h1>
 
     <p>Acessando o site do 
         
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <!--Por padrão o tamanho padrão do iframe é: 300px/150px-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="600"
+        width="300" scrolling="no">
+            [Seu navegador não é compatível com o uso de iframes, <a href="https://www.cursoemvideo.com" rel="external" target="_blank">Clique aqui para acessar o site</a>]
+        </iframe>
 
         para aprender à programar:</p>
 
     <p>O site do Google ttbm é muito legal:</p>
     <p><iframe src="https://www.google.com.br/" frameborder="0"></iframe>, pena que não funciona o Iframe.</p>
+
+
+    <p>O repositório do Guanabra
+        
+        <iframe src="https://gustavoguanabara.github.io/" frameborder="0">
+            [Seu navegador não é compatível com o uso de iframes, <a href="https://gustavoguanabara.github.io/" rel="external" target="_blank">Clique aqui para acessar o site</a>]
+        </iframe>
+
+        também é bem legal.</p>
 </html>
