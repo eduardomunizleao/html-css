@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela</title>
+
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        caption{
+            font-weight: bolder;
+            font-size: 1.7em;
+            background-color: chocolate;
+            border: 1px dashed black;
+        }
+
+        /*.destaque{
+            background-color: gray;
+            color:white;
+        }*/
+
+        .cnome{
+            background-color: gray;
+            color:white;
+        }
+
+        col.grupo{
+            background-color: rgb(120, 149, 245);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabela:</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="grupo" span="2">
+            <col class="cprofissao">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>Eduardo Muniz</td>
+            <td>M</td>
+            <td>16</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Paulo</td>
+            <td>M</td>
+            <td>59</td>
+            <td>Projetista</td>
+        </tr>
+
+        <tr>
+            <td>Raquel</td>
+            <td>F</td>
+            <td>56</td>
+            <td>Dona de casa</td>
+        </tr>
+
+        <tr>
+            <td>Alexandre</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Entregador</td>
+        </tr>
+
+        <tr>
+            <td>Lucas</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Projetisata de móveis</td>
+        </tr>
+    </table>
+</body>
+</html>
