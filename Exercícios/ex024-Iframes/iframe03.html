@@ -33,7 +33,12 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quis magnam magni at libero, iste adipisci cum recusandae explicabo numquam voluptate perspiciatis nam placeat eaque suscipit quisquam tenetur! Debitis corporis harum, dignissimos accusantium corrupti ea cupiditate, ullam eligendi dolores ducimus nulla magnam architecto. Ad, mollitia minima. Illum saepe quidem maiores nam! Quasi placeat beatae necessitatibus dolore et velit asperiores perferendis laboriosam nihil, accusantium illo excepturi natus expedita? Aliquam, autem ut!</p>
 
-    <iframe src="" name="frame">
+    <!--
+        Dentro da tag "srcdoc" é permitido colocar elementos HTML
+        Obs: Não pode usar aspas duplas dentro do HTML dessa tag, somente aspas simples
+    -->
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima:</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestiae vel ratione quis fuga dolor aliquid repellendus est nulla nisi, repudiandae sint illum labore nesciunt qui beatae in ab praesentium atque doloremque pariatur, quidem alias. Minus, nam! Nemo ratione, ab eligendi dolor maxime reiciendis dolorem fugit, porro, nulla quas voluptas.</p> <img src='imagens/cursoemvideo.png'> " name="frame"> 
         não é compatível
     </iframe>
 
