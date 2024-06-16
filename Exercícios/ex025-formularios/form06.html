@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Testando formularios:</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Cor favorita:</legend>
+
+            <label for="icolor">Cor:</label>
+            <input type="color" name="color" id="icolor" value="#00FF00">
+        </fieldset>
+
+        <fieldset>
+            <legend>Nível de satisfação</legend>
+
+            <label for="isatis">Qual o seu nível de satisfação sobre a impresa: </label>
+
+            <input type="range" name="sati" id="isatis" value="1000" min="0" max="1000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Envio da atividade:</legend>
+
+            <label for="iativ">Araste se PDF para cá: </label>
+            <input type="file" name="ativ" id="iativ"> 
+
+        <!--Não se pode utilizar o método post, quando utilizar o file-->
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
