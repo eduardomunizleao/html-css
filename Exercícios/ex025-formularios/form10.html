@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output em formulários</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Ano de nascimento</legend>
+
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" value="2000" 
+            
+            oninput="iidade.innerHTML = Number(2024) - Number(iano.value)"
+            
+            >
+
+            <p>
+                <label for="iidade">Sua idade:</label>
+                <output id="iidade">24</output>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
