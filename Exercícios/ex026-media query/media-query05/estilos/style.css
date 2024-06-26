@@ -75,3 +75,7 @@ span#burger:hover{
     color: black;
     cursor: pointer;
 }
+
+main{
+    width: 768px;
+}
