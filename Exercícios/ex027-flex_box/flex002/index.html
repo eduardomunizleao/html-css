@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direções e eixos nas caixas flexíveis</title>
+
+    <style>
+        /*
+            Atenção só se pode atribuir o atributo 'display: flex;' aos elementos filhos/itens!!!
+        */
+
+        div.conteiner{
+            background-color: lightsalmon;
+            border: 1px solid black;
+            padding: 40px;
+
+            display:flex;
+        }
+
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 30px;
+            font-size: 1.3em;
+        }
+
+        h1{
+            background-color: darkgreen;
+            padding: 30px;
+            color: white;
+        }
+
+        h2{
+            color: darkred;
+        }
+
+        section{
+            margin: 90px 0px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+
+        div#row{
+            flex-direction: row;
+        }
+
+        div#row-reverse{
+            flex-direction: row-reverse;
+        }
+
+        div#column{
+            flex-direction: column;
+        }   
+
+        div#column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Direções e eixos nas caixas flexíveis:</h1>
+
+    <hr>
+
+    <section>
+        <h2>Flex direction = row</h2>
+        <div class="conteiner" id="row">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Flex direction = row-reverse</h2>
+        <div class="conteiner" id="row-reverse">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Flex direction = column</h2>
+        <div class="conteiner" id="column">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Flex direction = column-reverse</h2>
+        <div class="conteiner" id="column-reverse">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+            <div class="item">G</div>
+        </div>
+    </section>
+</body>
+</html>
