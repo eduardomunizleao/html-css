@@ -3,29 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao FlexBox</title>
+    <title>Alinhamento nos eixos</title>
 
     <style>
-        /*
-            Atenção só se pode atribuir o atributo 'display: flex;' aos elementos filhos/itens!!!
-        */
-
         div.conteiner{
             background-color: lightsalmon;
+
             display:flex;
+
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
         }
 
         div.item{
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            
-            flex: auto;
+        }
+
+
+        div#flex-start{
+            align-items: flex-start;
+        }
+        div#flex-end{
+            align-items: flex-end;
+        }
+        div#stretch{
+            align-items: stretch;
+        }
+        div#center{
+            align-items: center;
+        }
+
+        #flex-start, #flex-end, #stretch, #center{
+            height: 300px;
+        }
+
+
+
+
+        div#space-between{
+            justify-content: space-between;
+        }
+
+        div#space-around{
+            justify-content: space-around;
+        }
+
+        div#space-evenly{
+            justify-content: space-evenly;
         }
     </style>
 </head>
 <body>
-    <div class="conteiner">
+    <h1 style="color:blue; text-align:center; font-size:2em;">Align-itens</h1>
+
+    <h1>Stretch</h1>
+    <hr>
+
+    <div class="conteiner" id="stretch">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <h1>Flex-start</h1>
+    <hr>
+
+    <div class="conteiner" id="flex-start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <h1>Flex-end</h1>
+    <hr>
+
+    <div class="conteiner" id="flex-end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <h1>Center</h1>
+    <hr>
+
+    <div class="conteiner" id="center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+
+    <h1 style="color:blue; text-align:center; font-size:2em;">Justify-content de espaçamento</h1>
+
+
+    <h1>Space-between</h1>
+    <hr>
+
+    <div class="conteiner" id="space-between">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>Space-around</h1>
+    <hr>
+
+
+    <div class="conteiner" id="space-around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h1>Space-evenly</h1>
+    <hr>
+
+
+    <div class="conteiner" id="space-evenly">
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
